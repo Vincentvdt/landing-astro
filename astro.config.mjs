@@ -11,5 +11,13 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
     site: 'https://chrysalis25.com',
-  integrations: [sitemap()]
+  integrations: [sitemap({
+      i18n: {
+          defaultLocale: 'en',
+          locales: {
+              en: 'en-US',
+              fr: 'fr-FR',
+          }
+      }
+  })]
 });
